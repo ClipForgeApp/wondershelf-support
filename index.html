@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WonderShelf Support</title>
+  <meta name="description" content="Support information for WonderShelf, an ad-free children's reading and painting app.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #241b2f;
+      --soft: #665873;
+      --paper: #fffaf0;
+      --shell: #f6ecff;
+      --aqua: #c9f5f0;
+      --purple: #7d5cff;
+      --gold: #f2b84b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-rounded, "SF Pro Rounded", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 15%, rgba(242, 184, 75, 0.24), transparent 28rem),
+        radial-gradient(circle at 86% 18%, rgba(125, 92, 255, 0.18), transparent 24rem),
+        linear-gradient(145deg, #fffaf0 0%, #f6ecff 58%, #e7fbf7 100%);
+      min-height: 100vh;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 64px 0;
+    }
+
+    .mark {
+      width: 80px;
+      height: 80px;
+      border-radius: 22px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--purple), #29b7d3);
+      box-shadow: 0 18px 38px rgba(36, 27, 47, 0.18);
+      color: white;
+      font-size: 42px;
+      font-weight: 900;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 0.95;
+      letter-spacing: 0;
+      margin: 0 0 18px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0 0 12px;
+    }
+
+    p {
+      color: var(--soft);
+      font-size: 18px;
+      line-height: 1.58;
+      margin: 0;
+    }
+
+    a {
+      color: #4c36c8;
+      font-weight: 800;
+    }
+
+    .intro {
+      max-width: 700px;
+      font-size: 21px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(36, 27, 47, 0.09);
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 18px 46px rgba(36, 27, 47, 0.08);
+    }
+
+    .steps {
+      padding-left: 22px;
+      margin: 10px 0 0;
+      color: var(--soft);
+      font-size: 17px;
+      line-height: 1.55;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(36, 27, 47, 0.12);
+      color: var(--soft);
+      font-size: 15px;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        padding: 42px 0;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">W</div>
+    <h1>WonderShelf Support</h1>
+    <p class="intro">WonderShelf is an ad-free children's bookshelf of interactive WonderPages and watercolor painting. We collect no tracking data and keep each child's first name, age, and artwork on the device.</p>
+
+    <section class="grid" aria-label="Support topics">
+      <article class="card">
+        <h2>Get Help</h2>
+        <p>For WonderShelf questions, app issues, accessibility feedback, or App Review support, <a href="https://github.com/ClipForgeApp/wondershelf-support/issues">open an issue on GitHub</a>. GitHub issues are public, so a parent or caregiver should post and leave out any personal information.</p>
+      </article>
+
+      <article class="card">
+        <h2>Delete Account</h2>
+        <p>WonderShelf does not create a server account. To delete the local account and saved art:</p>
+        <ol class="steps">
+          <li>Open WonderShelf.</li>
+          <li>Tap the profile button on the bookshelf.</li>
+          <li>Choose <strong>Delete WonderShelf Account &amp; Local Data</strong>.</li>
+          <li>Confirm deletion. The app removes the first name, age, and saved paintings from the device.</li>
+        </ol>
+      </article>
+
+      <article class="card">
+        <h2>Privacy</h2>
+        <p>WonderShelf has no ads, third-party tracking, analytics SDKs, or external accounts. The app uses Sign in with Apple only to start a private local shelf experience.</p>
+      </article>
+
+      <article class="card">
+        <h2>Family Use</h2>
+        <p>Books are organized by age range, and earlier shelves remain available when a reader grows into a new age band.</p>
+      </article>
+    </section>
+
+    <footer>
+      <div>WonderShelf</div>
+      <div>Last updated May 14, 2026.</div>
+    </footer>
+  </main>
+</body>
+</html>
